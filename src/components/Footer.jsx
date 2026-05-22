@@ -1,16 +1,8 @@
 function Footer() {
   return (
     <footer className="footer">
-      <h2>Sarathi-X</h2>
-
-      <p>© 2026 Sarathi-X. All Rights Reserved.</p>
-
-      <div className="socials">
-        <span>Instagram</span>
-        <span>LinkedIn</span>
-        <span>GitHub</span>
-        <span>Twitter</span>
-      </div>
+      <h3>Sarathi-X</h3>
+      <p>AI Powered Learning Platform For Students</p>
     </footer>
   );
 }

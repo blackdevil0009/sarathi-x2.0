@@ -1,18 +1,18 @@
 function Hero() {
   return (
-    <section className="hero">
-      <div className="hero-content">
-        <h1>Learn Coding Smarter with Sarathi-X</h1>
+    <section className="hero" id="home">
+      <div className="hero-text">
+        <h1>
+          Smart Learning Platform <br />
+          For Students
+        </h1>
 
         <p>
-          An all-in-one platform for coding practice, quizzes,
-          AI assistance, and student learning.
+          Sarathi-X helps students learn faster with AI assistance,
+          quizzes, coding practice, analytics dashboard and career guidance.
         </p>
 
-        <div className="hero-buttons">
-          <button>Get Started</button>
-          <button className="outline">Start Coding</button>
-        </div>
+        <button className="btn">Start Learning</button>
       </div>
     </section>
   );

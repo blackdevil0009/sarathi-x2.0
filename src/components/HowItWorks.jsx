@@ -1,28 +1,28 @@
 function HowItWorks() {
   return (
-    <section id="work">
-      <h2>How It Works</h2>
+    <section>
+      <h1 className="title">How It Works</h1>
 
-      <div className="cards">
+      <div className="grid">
 
         <div className="card">
-          <h3>1. Register</h3>
+          <h3>1. Sign Up</h3>
           <p>Create your student account.</p>
         </div>
 
         <div className="card">
           <h3>2. Learn</h3>
-          <p>Access modern learning resources.</p>
+          <p>Access quizzes, AI tools and learning resources.</p>
         </div>
 
         <div className="card">
-          <h3>3. Grow</h3>
-          <p>Improve your career opportunities.</p>
+          <h3>3. Track Progress</h3>
+          <p>Monitor performance using dashboard analytics.</p>
         </div>
 
       </div>
     </section>
-  )
+  );
 }
 
-export default HowItWorks
+export default HowItWorks;

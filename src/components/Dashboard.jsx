@@ -1,13 +1,25 @@
 function Dashboard() {
   return (
-    <section className="section">
-      <h2>Student Dashboard</h2>
+    <section>
+      <h1 className="title">Student Dashboard</h1>
 
-      <div className="card-container">
-        <div className="card">Track Progress</div>
-        <div className="card">Quiz Scores</div>
-        <div className="card">Coding Performance</div>
-        <div className="card">Daily Practice</div>
+      <div className="grid">
+
+        <div className="card">
+          <h3>85%</h3>
+          <p>Quiz Performance</p>
+        </div>
+
+        <div className="card">
+          <h3>120+</h3>
+          <p>Completed Lessons</p>
+        </div>
+
+        <div className="card">
+          <h3>40+</h3>
+          <p>AI Sessions</p>
+        </div>
+
       </div>
     </section>
   );
