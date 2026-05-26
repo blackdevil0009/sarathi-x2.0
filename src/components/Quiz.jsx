@@ -1,31 +1,29 @@
 function Quiz() {
   return (
-    <section id="quiz">
-      <h1 className="title">Quiz Section</h1>
+    <section className="section">
+      <h2>Quiz Categories</h2>
 
-      <div className="grid">
+      <div className="cards">
 
         <div className="card">
-          <h3>Java Quiz</h3>
-          <p>Practice Java MCQs and improve coding knowledge.</p>
-          <button className="btn">Start Quiz</button>
+          <h3>Operating System</h3>
         </div>
 
         <div className="card">
-          <h3>OS Quiz</h3>
-          <p>Test operating system concepts with smart quizzes.</p>
-          <button className="btn">Start Quiz</button>
+          <h3>Java</h3>
         </div>
 
         <div className="card">
-          <h3>DBMS Quiz</h3>
-          <p>Learn database concepts with interactive tests.</p>
-          <button className="btn">Start Quiz</button>
+          <h3>Cyber Security</h3>
+        </div>
+
+        <div className="card">
+          <h3>Programming</h3>
         </div>
 
       </div>
     </section>
-  );
+  )
 }
 
-export default Quiz;
+export default Quiz

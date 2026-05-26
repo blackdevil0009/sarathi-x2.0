@@ -1,36 +1,33 @@
 function Features() {
   return (
-    <section id="features">
-      <h1 className="title">Platform Features</h1>
-      <p className="subtitle">
-        Modern features for better learning experience
-      </p>
+    <section className="section">
+      <h2>Features</h2>
 
-      <div className="grid">
+      <div className="cards">
 
         <div className="card">
-          <h3>AI Learning</h3>
-          <p>Smart AI assistant for doubt solving and personalized learning.</p>
+          <h3>AI Assistant</h3>
+          <p>Get instant academic help.</p>
         </div>
 
         <div className="card">
-          <h3>Live Quiz</h3>
-          <p>Interactive quizzes with score tracking and leaderboard.</p>
+          <h3>Smart Quiz</h3>
+          <p>Practice subject-wise quizzes.</p>
         </div>
 
         <div className="card">
-          <h3>Performance Analytics</h3>
-          <p>Track your progress with beautiful dashboard analytics.</p>
+          <h3>Career Guidance</h3>
+          <p>AI-based career suggestions.</p>
         </div>
 
         <div className="card">
-          <h3>Study Material</h3>
-          <p>Access notes, coding challenges and important resources.</p>
+          <h3>Study Materials</h3>
+          <p>Access notes and PDFs.</p>
         </div>
 
       </div>
     </section>
-  );
+  )
 }
 
-export default Features;
+export default Features

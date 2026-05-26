@@ -1,15 +1,15 @@
 function About() {
   return (
-    <section id="about">
-      <h1 className="title">About Sarathi-X</h1>
+    <section className="section">
+      <h2>About Sarathi-X</h2>
 
-      <p className="subtitle">
-        Sarathi-X is an AI powered educational platform designed for students.
-        It combines smart quizzes, AI assistance, coding support,
-        analytics dashboard and career guidance into one platform.
+      <p>
+        Sarathi-X is an AI-powered educational platform designed
+        to help students improve learning, coding skills,
+        quizzes and career growth.
       </p>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About

@@ -1,28 +1,28 @@
 function Dashboard() {
   return (
-    <section>
-      <h1 className="title">Student Dashboard</h1>
+    <section className="section">
+      <h2>Student Dashboard</h2>
 
-      <div className="grid">
+      <div className="cards">
 
         <div className="card">
-          <h3>85%</h3>
-          <p>Quiz Performance</p>
+          <h3>Quiz Score</h3>
+          <p>92%</p>
         </div>
 
         <div className="card">
-          <h3>120+</h3>
-          <p>Completed Lessons</p>
+          <h3>Study Hours</h3>
+          <p>5 Hours</p>
         </div>
 
         <div className="card">
-          <h3>40+</h3>
-          <p>AI Sessions</p>
+          <h3>Certificates</h3>
+          <p>8 Completed</p>
         </div>
 
       </div>
     </section>
-  );
+  )
 }
 
-export default Dashboard;
+export default Dashboard

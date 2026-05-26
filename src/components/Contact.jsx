@@ -1,24 +1,21 @@
 function Contact() {
   return (
-    <section id="contact">
-      <h1 className="title">Contact Us</h1>
+    <section className="section">
+      <h2>Contact Us</h2>
 
-      <div className="card">
+      <form className="contact-form">
 
-        <input type="text" placeholder="Your Name" />
-        <br /><br />
+        <input type="text" placeholder="Enter Name" />
 
-        <input type="email" placeholder="Your Email" />
-        <br /><br />
+        <input type="email" placeholder="Enter Email" />
 
-        <textarea placeholder="Your Message"></textarea>
-        <br /><br />
+        <textarea placeholder="Enter Message"></textarea>
 
         <button className="btn">Send Message</button>
 
-      </div>
+      </form>
     </section>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

@@ -1,33 +1,16 @@
 function AISection() {
   return (
-    <section id="ai">
-      <h1 className="title">AI Assistant</h1>
+    <section className="section ai">
+      <h2>AI Learning Assistant</h2>
 
-      <div className="grid">
+      <p>
+        Ask doubts, generate notes, solve coding problems
+        and improve learning with AI support.
+      </p>
 
-        <div className="card">
-          <h3>24/7 AI Chat</h3>
-          <p>Ask doubts anytime with instant AI answers.</p>
-        </div>
-
-        <div className="card">
-          <h3>Resume Builder</h3>
-          <p>Create professional resumes with AI suggestions.</p>
-        </div>
-
-        <div className="card">
-          <h3>Roadmap Generator</h3>
-          <p>Get career and learning roadmap based on your goals.</p>
-        </div>
-
-        <div className="card">
-          <h3>Smart Notes</h3>
-          <p>Generate short notes and summaries instantly.</p>
-        </div>
-
-      </div>
+      <button className="btn">Ask AI</button>
     </section>
-  );
+  )
 }
 
-export default AISection;
+export default AISection

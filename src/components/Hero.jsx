@@ -1,21 +1,21 @@
 function Hero() {
   return (
-    <section className="hero" id="home">
-      <div className="hero-text">
-        <h1>
-          Smart Learning Platform <br />
-          For Students
-        </h1>
+    <section className="hero">
+      <div className="hero-content">
+        <h1>Empowering Students Through AI Learning</h1>
 
         <p>
-          Sarathi-X helps students learn faster with AI assistance,
-          quizzes, coding practice, analytics dashboard and career guidance.
+          Sarathi-X helps students learn smarter with AI assistance,
+          quizzes, coding practice and career guidance.
         </p>
 
-        <button className="btn">Start Learning</button>
+        <div className="hero-buttons">
+          <button className="btn">Get Started</button>
+          <button className="btn-outline">Explore</button>
+        </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

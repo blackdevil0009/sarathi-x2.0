@@ -3,18 +3,14 @@ function Compiler() {
     <section className="section">
       <h2>Online Compiler</h2>
 
-      <textarea
-        className="code-box"
-        placeholder="Write your code here..."
-      ></textarea>
+      <p>
+        Practice coding in C, C++, Java and Python directly
+        inside Sarathi-X.
+      </p>
 
-      <div className="btn-group">
-        <button>Run Code</button>
-        <button>Clear</button>
-        <button>Save Program</button>
-      </div>
+      <button className="btn">Start Coding</button>
     </section>
-  );
+  )
 }
 
-export default Compiler;
+export default Compiler
