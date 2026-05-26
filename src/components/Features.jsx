@@ -1,33 +1,35 @@
-function Features() {
+import React from "react";
+
+const Features = () => {
   return (
-    <section className="section">
+    <section id="features" className="section">
       <h2>Features</h2>
 
-      <div className="cards">
+      <div className="feature-grid">
 
         <div className="card">
           <h3>AI Assistant</h3>
-          <p>Get instant academic help.</p>
+          <p>Ask questions and get instant answers.</p>
         </div>
 
         <div className="card">
           <h3>Smart Quiz</h3>
-          <p>Practice subject-wise quizzes.</p>
+          <p>Practice quizzes with scores and timer.</p>
         </div>
 
         <div className="card">
           <h3>Career Guidance</h3>
-          <p>AI-based career suggestions.</p>
+          <p>Get career recommendations and support.</p>
         </div>
 
         <div className="card">
-          <h3>Study Materials</h3>
-          <p>Access notes and PDFs.</p>
+          <h3>Skill Development</h3>
+          <p>Improve coding and technical skills.</p>
         </div>
 
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

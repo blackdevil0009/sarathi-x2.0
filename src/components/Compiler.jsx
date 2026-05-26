@@ -1,16 +1,40 @@
-function Compiler() {
-  return (
-    <section className="section">
-      <h2>Online Compiler</h2>
+import React, { useState } from "react";
 
-      <p>
-        Practice coding in C, C++, Java and Python directly
-        inside Sarathi-X.
+const Compiler = () => {
+  const [code, setCode] = useState("");
+  const [output, setOutput] = useState("");
+
+  const runCode = () => {
+    if (code.trim() === "") {
+      setOutput("Please write some code...");
+    } else {
+      setOutput("Code Executed Successfully ✅");
+    }
+  };
+
+  return (
+    <section id="compiler" className="compiler-section">
+      <h1>Online Code Compiler</h1>
+
+      <p className="compiler-text">
+        Practice coding directly on Sarathi-X. Write code, test logic,
+        and improve programming skills in a simple coding environment.
       </p>
 
-      <button className="btn">Start Coding</button>
-    </section>
-  )
-}
+      <textarea
+        placeholder="Write your code here..."
+        value={code}
+        onChange={(e) => setCode(e.target.value)}
+      ></textarea>
 
-export default Compiler
+      <button onClick={runCode}>Run Code</button>
+
+      <div className="output-box">
+        <h3>Output</h3>
+        <p>{output}</p>
+      </div>
+    </section>
+  );
+};
+
+export default Compiler;

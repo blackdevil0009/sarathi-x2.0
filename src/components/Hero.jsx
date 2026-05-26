@@ -1,21 +1,23 @@
-function Hero() {
+import React from "react";
+
+const Hero = () => {
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="hero-content">
-        <h1>Empowering Students Through AI Learning</h1>
+        <h1>Welcome to Sarathi-X</h1>
 
         <p>
-          Sarathi-X helps students learn smarter with AI assistance,
-          quizzes, coding practice and career guidance.
+          Your AI-powered learning and career guidance platform.
+          Explore quizzes, ask AI questions, and improve your skills.
         </p>
 
-        <div className="hero-buttons">
-          <button className="btn">Get Started</button>
-          <button className="btn-outline">Explore</button>
+        <div className="hero-btns">
+          <button>Get Started</button>
+          <button className="secondary">Explore Quiz</button>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
