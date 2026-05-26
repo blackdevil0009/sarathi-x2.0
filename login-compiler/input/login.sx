@@ -1,0 +1,10 @@
+PAGE StudentLogin
+TITLE "Welcome to Sarthi-X"
+SUBTITLE "Student Portal"
+STUDENT_ID
+PASSWORD
+BUTTON "Student Login"
+REMEMBER_ME true
+FORGOT_PASSWORD true
+THEME dark
+BACKGROUND gradient

@@ -1,0 +1,15 @@
+{
+  "name": "sarthi-x-login-compiler",
+  "version": "1.0.0",
+  "description": "Sarthi-X Login Compiler that converts .sx login definitions into a student login HTML page.",
+  "main": "compiler/compiler.js",
+  "scripts": {
+    "build": "node compiler/cli.js",
+    "start": "npm run build"
+  },
+  "author": "Sarthi-X Compiler",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="dashboard-app dark-theme">
+  <div class="layout-shell modern">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <h1>StudentDashboard</h1>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content-area">
+      <header class="topbar">
+        <button id="sidebarToggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+        <div>
+          <h2>Student Dashboard</h2>
+          <p>Welcome, Student</p>
+        </div>
+        <button id="themeToggle" class="theme-toggle">Switch theme</button>
+      </header>
+      <section class="dashboard-grid">
+          <article class="dashboard-card">
+            <div class="card-header">
+              <span>Attendance</span>
+              <span class="card-value">85%</span>
+            </div>
+          </article>
+          <article class="dashboard-card">
+            <div class="card-header">
+              <span>Assignments</span>
+              <span class="card-value">5 Pending</span>
+            </div>
+          </article>
+          <article class="dashboard-card">
+            <div class="card-header">
+              <span>Grades</span>
+              <span class="card-value">A Grade</span>
+            </div>
+          </article>
+      </section>
+      <section class="profile-panel">
+        <div class="profile-card">
+          <h3>Profile</h3>
+          <p class="profile-name">John Doe</p>
+          <p class="profile-id">STU12345</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

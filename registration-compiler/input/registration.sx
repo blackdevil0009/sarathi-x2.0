@@ -1,0 +1,17 @@
+PAGE StudentRegistration
+TITLE "Sarthi-X Registration"
+SUBTITLE "Create Your Student Account"
+FULL_NAME
+EMAIL
+PHONE
+STUDENT_ID
+PASSWORD
+CONFIRM_PASSWORD
+GENDER
+DATE_OF_BIRTH
+COURSE
+YEAR
+TERMS_CHECKBOX true
+BUTTON "Register Now"
+THEME dark
+BACKGROUND gradient

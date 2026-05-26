@@ -1,0 +1,25 @@
+PAGE StudentDashboard
+
+TITLE "Student Dashboard"
+
+WELCOME_MESSAGE "Welcome, Student"
+
+SIDEBAR
+MENU "Home"
+MENU "Profile"
+MENU "Attendance"
+MENU "Results"
+MENU "Settings"
+
+CARDS
+CARD "Attendance" "85%"
+CARD "Assignments" "5 Pending"
+CARD "Grades" "A Grade"
+
+PROFILE_SECTION
+PROFILE_NAME "John Doe"
+PROFILE_ID "STU12345"
+
+THEME dark
+
+LAYOUT modern
