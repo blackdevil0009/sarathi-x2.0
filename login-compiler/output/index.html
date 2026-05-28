@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarthi-X Login</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #030712 0%, #0f172a 100%);
+      color: #e2e8f0;
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    .card {
+      width: min(100%, 420px);
+      padding: 36px;
+      border-radius: 28px;
+      background: rgba(15, 23, 42, 0.92);
+      box-shadow: 0 24px 80px rgba(15, 23, 42, 0.32);
+      backdrop-filter: blur(16px);
+    }
+
+    .card h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+    }
+
+    .card p {
+      margin: 0 0 28px;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+
+    .field {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    .field input {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      background: rgba(15, 23, 42, 0.82);
+      color: #f8fafc;
+      outline: none;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .field input:focus {
+      border-color: #60a5fa;
+      transform: translateY(-1px);
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 20px 0 28px;
+      flex-wrap: wrap;
+    }
+
+    .checkbox {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #cbd5e1;
+    }
+
+    .checkbox input {
+      width: 18px;
+      height: 18px;
+      accent-color: #60a5fa;
+    }
+
+    .link {
+      color: #93c5fd;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .button {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 16px 30px rgba(37, 99, 235, 0.24);
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+    }
+
+    @media (max-width: 480px) {
+      .actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="card">
+    <h1>Welcome to Sarthi-X</h1>
+    <p>Student Portal</p>
+    <form>
+      <div class="field">
+        <label for="student-id">Student ID</label>
+        <input id="student-id" type="text" placeholder="Enter your student ID" />
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Enter your password" />
+      </div>
+      <div class="actions">
+        <label class="checkbox">
+          <input type="checkbox" />
+          Remember me
+        </label>
+        <a class="link" href="#">Forgot password?</a>
+      </div>
+      <button class="button" type="button">Student Login</button>
+    </form>
+  </section>
+</body>
+</html>

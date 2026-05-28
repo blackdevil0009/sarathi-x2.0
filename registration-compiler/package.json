@@ -1,0 +1,15 @@
+{
+  "name": "sarthi-x-registration-compiler",
+  "version": "1.0.0",
+  "description": "Sarthi-X Registration Compiler that converts .sx registration definitions into a student registration HTML page.",
+  "main": "compiler/compiler.js",
+  "scripts": {
+    "build": "node compiler/compiler.js",
+    "start": "npm run build"
+  },
+  "author": "Sarthi-X Compiler",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}

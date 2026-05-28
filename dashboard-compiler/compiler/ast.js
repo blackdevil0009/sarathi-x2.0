@@ -1,0 +1,23 @@
+const NodeType = {
+  PAGE_NODE: 'PAGE_NODE',
+  TITLE_NODE: 'TITLE_NODE',
+  WELCOME_MESSAGE_NODE: 'WELCOME_MESSAGE_NODE',
+  SIDEBAR_NODE: 'SIDEBAR_NODE',
+  MENU_NODE: 'MENU_NODE',
+  CARDS_NODE: 'CARDS_NODE',
+  CARD_NODE: 'CARD_NODE',
+  PROFILE_SECTION_NODE: 'PROFILE_SECTION_NODE',
+  PROFILE_NAME_NODE: 'PROFILE_NAME_NODE',
+  PROFILE_ID_NODE: 'PROFILE_ID_NODE',
+  THEME_NODE: 'THEME_NODE',
+  LAYOUT_NODE: 'LAYOUT_NODE'
+};
+
+function createNode(type, data = {}) {
+  return { type, ...data };
+}
+
+module.exports = {
+  NodeType,
+  createNode
+};
