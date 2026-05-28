@@ -1,0 +1,60 @@
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
+}
+
+.hero-left{
+  flex:1;
+}
+
+.hero-left h1{
+  font-size:65px;
+}
+
+.hero-left span{
+  color:#00e5ff;
+}
+
+.hero-left p{
+  margin:20px 0;
+  font-size:18px;
+  line-height:1.6;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+}
+
+.hero button{
+  padding:14px 28px;
+  border:none;
+  border-radius:30px;
+  background:#00e5ff;
+  color:black;
+  font-weight:bold;
+}
+
+.outline{
+  background:transparent !important;
+  border:2px solid #00e5ff !important;
+  color:white !important;
+}
+
+.hero-right{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.glass-card{
+  width:350px;
+  padding:40px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 30px rgba(0,229,255,0.4);
+}

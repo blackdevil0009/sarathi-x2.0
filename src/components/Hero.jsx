@@ -1,23 +1,37 @@
-import React from "react";
+import "./Hero.css";
 
-const Hero = () => {
+function Hero() {
   return (
-    <section id="home" className="hero">
-      <div className="hero-content">
-        <h1>Welcome to Sarathi-X</h1>
+    <div className="hero">
+      <div className="hero-left">
+        <h1>
+          Smart Learning <span>With AI</span>
+        </h1>
 
         <p>
-          Your AI-powered learning and career guidance platform.
-          Explore quizzes, ask AI questions, and improve your skills.
+          Sarathi-X helps students learn coding, solve quizzes,
+          practice interview questions and grow skills with AI.
         </p>
 
-        <div className="hero-btns">
-          <button>Get Started</button>
-          <button className="secondary">Explore Quiz</button>
+        <div className="hero-buttons">
+          <a href="#dashboard">
+            <button>Start Journey</button>
+          </a>
+
+          <a href="#features">
+            <button className="outline">Explore</button>
+          </a>
         </div>
       </div>
-    </section>
+
+      <div className="hero-right">
+        <div className="glass-card">
+          <h2>AI Powered Dashboard</h2>
+          <p>Track progress, solve coding problems and learn faster.</p>
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
 export default Hero;

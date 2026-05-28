@@ -1,34 +1,55 @@
-import React from "react";
+import "./About.css";
 
-const About = () => {
+function About() {
   return (
-    <section id="about" className="section">
-      
-      <h2>About Sarathi-X</h2>
+    <section className="about-section" id="about">
+      <div className="about-container">
 
-      <p>
-        Sarathi-X is an AI-powered platform designed to help students
-        learn smarter, improve technical skills, prepare for quizzes,
-        and receive intelligent career guidance.
-      </p>
+        <div className="about-top">
+          <p className="about-tag">WELCOME TO SARTHI-X</p>
 
-      <div className="about-cards">
-        <div className="card">
-          <h3>Our Mission</h3>
-          <p>
-            To make education smarter, interactive, and accessible.
+          <h1>
+            Learn Smarter <span>With AI</span>
+          </h1>
+
+          <p className="about-desc">
+            Sarthi-X is an AI powered learning platform for students.
+            Practice coding, improve aptitude, solve quizzes, track
+            progress, and learn with personalized AI guidance.
           </p>
         </div>
 
-        <div className="card">
-          <h3>Our Vision</h3>
-          <p>
-            Empower every student with AI-driven learning tools.
-          </p>
+        <div className="about-cards">
+
+          <div className="about-card">
+            <div className="icon">🤖</div>
+            <h2>AI Mentor</h2>
+            <p>
+              Get instant AI guidance, coding help, and smart learning support.
+            </p>
+          </div>
+
+          <div className="about-card">
+            <div className="icon">📚</div>
+            <h2>Interactive Learning</h2>
+            <p>
+              Practice coding, quizzes, and aptitude with real-time feedback.
+            </p>
+          </div>
+
+          <div className="about-card">
+            <div className="icon">📈</div>
+            <h2>Track Growth</h2>
+            <p>
+              Monitor your learning journey with dashboards and analytics.
+            </p>
+          </div>
+
         </div>
+
       </div>
     </section>
   );
-};
+}
 
 export default About;

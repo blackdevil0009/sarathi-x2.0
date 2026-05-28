@@ -1,35 +1,62 @@
-import React from "react";
+import "./Features.css";
 
-const Features = () => {
+function Features() {
   return (
-    <section id="features" className="section">
-      <h2>Features</h2>
+    <section className="features-section" id="features">
 
-      <div className="feature-grid">
+      <div className="features-heading">
+        <p>POWERFUL FEATURES</p>
+        <h1>Why Students Choose Sarthi-X</h1>
+      </div>
 
-        <div className="card">
-          <h3>AI Assistant</h3>
-          <p>Ask questions and get instant answers.</p>
+      <div className="features-grid">
+
+        <div className="feature-box">
+          <h2>💻 Smart Compiler</h2>
+          <p>
+            Write and run code instantly with beginner friendly coding support.
+          </p>
         </div>
 
-        <div className="card">
-          <h3>Smart Quiz</h3>
-          <p>Practice quizzes with scores and timer.</p>
+        <div className="feature-box">
+          <h2>🧠 AI Assistant</h2>
+          <p>
+            Solve doubts, get explanations, and learn concepts interactively.
+          </p>
         </div>
 
-        <div className="card">
-          <h3>Career Guidance</h3>
-          <p>Get career recommendations and support.</p>
+        <div className="feature-box">
+          <h2>📊 Dashboard</h2>
+          <p>
+            View performance analytics, streaks, achievements, and reports.
+          </p>
         </div>
 
-        <div className="card">
-          <h3>Skill Development</h3>
-          <p>Improve coding and technical skills.</p>
+        <div className="feature-box">
+          <h2>🎯 Quiz Practice</h2>
+          <p>
+            Improve logical reasoning and aptitude through quizzes.
+          </p>
+        </div>
+
+        <div className="feature-box">
+          <h2>🚀 Career Growth</h2>
+          <p>
+            Build confidence with coding challenges and interview preparation.
+          </p>
+        </div>
+
+        <div className="feature-box">
+          <h2>🌐 Community</h2>
+          <p>
+            Connect with learners, share ideas, and grow together.
+          </p>
         </div>
 
       </div>
+
     </section>
   );
-};
+}
 
 export default Features;

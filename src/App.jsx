@@ -1,34 +1,52 @@
-import './App.css'
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Features from "./components/Features";
+import AISection from "./components/AISection";
+import Quiz from "./components/Quiz";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Dashboard from "./components/Dashboard";
 
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Features from './components/Features'
-import HowItWorks from './components/HowItWorks'
-import AISection from './components/AISection'
-import Quiz from './components/Quiz'
-import Dashboard from './components/Dashboard'
-import Compiler from './components/Compiler'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-
+import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
-      <Hero />
-      <About />
-      <Features />
-      <HowItWorks />
-      <AISection />
-      <Quiz />
-      <Dashboard />
-      <Compiler />
-      <Contact />
+
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="features">
+        <Features />
+      </section>
+
+      <section id="ai">
+        <AISection />
+      </section>
+
+      <section id="quiz">
+        <Quiz />
+      </section>
+
+      <section id="dashboard">
+        <Dashboard />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
+

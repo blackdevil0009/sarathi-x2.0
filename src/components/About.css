@@ -1,0 +1,77 @@
+.about-section{
+  min-height:100vh;
+  padding:100px 8%;
+  background: linear-gradient(135deg,#07152f,#0d2b5c,#102d68);
+  color:white;
+  position:relative;
+}
+
+.about-container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.about-top{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.about-tag{
+  color:#6ee7ff;
+  letter-spacing:3px;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+.about-top h1{
+  font-size:60px;
+  margin-bottom:20px;
+  font-weight:800;
+}
+
+.about-top span{
+  color:#6ee7ff;
+}
+
+.about-desc{
+  max-width:850px;
+  margin:auto;
+  line-height:1.8;
+  font-size:18px;
+  color:#dbeafe;
+}
+
+.about-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.about-card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:40px 30px;
+  border-radius:25px;
+  backdrop-filter:blur(10px);
+  transition:0.4s;
+}
+
+.about-card:hover{
+  transform:translateY(-10px);
+  background:rgba(255,255,255,0.15);
+}
+
+.icon{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+.about-card h2{
+  margin-bottom:15px;
+  font-size:28px;
+}
+
+.about-card p{
+  color:#d1d5db;
+  line-height:1.7;
+}

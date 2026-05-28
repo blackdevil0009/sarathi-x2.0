@@ -1,44 +1,73 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import "./Quiz.css";
 
-const Quiz = () => {
+function Quiz() {
 
   const questions = [
     {
       question: "What is AI?",
-      options: ["Artificial Intelligence", "Data", "Network", "Computer"],
-      answer: "Artificial Intelligence",
+      options: [
+        "Artificial Intelligence",
+        "Automatic Internet",
+        "Advanced Input",
+        "None"
+      ],
+      answer: "Artificial Intelligence"
     },
+
+    {
+      question: "Which language is used in React?",
+      options: ["Python", "Java", "JavaScript", "C"],
+      answer: "JavaScript"
+    }
   ];
 
+  const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
 
-  const checkAnswer = (option) => {
-    if (option === questions[0].answer) {
+  const handleAnswer = (option) => {
+
+    if (option === questions[current].answer) {
       setScore(score + 1);
+    }
+
+    const next = current + 1;
+
+    if (next < questions.length) {
+      setCurrent(next);
+    } else {
+      alert("Quiz Completed");
     }
   };
 
   return (
-    <section id="quiz" className="section">
-      <h2>Quiz Section</h2>
+    <div className="quiz-container">
 
       <div className="quiz-box">
-        <h3>{questions[0].question}</h3>
 
-        {questions[0].options.map((option, index) => (
-          <button
-            key={index}
-            onClick={() => checkAnswer(option)}
-            className="quiz-btn"
-          >
-            {option}
-          </button>
-        ))}
+        <h1>Quiz Section</h1>
+
+        <h2>{questions[current].question}</h2>
+
+        <div className="options">
+
+          {questions[current].options.map((option, index) => (
+            <button
+              key={index}
+              onClick={() => handleAnswer(option)}
+            >
+              {option}
+            </button>
+          ))}
+
+        </div>
 
         <h3>Score: {score}</h3>
+
       </div>
-    </section>
+
+    </div>
   );
-};
+}
 
 export default Quiz;
