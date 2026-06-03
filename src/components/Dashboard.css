@@ -1,14 +1,15 @@
 .dashboard {
   min-height: 100vh;
-  background: #021526;
+  background: #0d2b6b;
   color: white;
-  padding: 50px;
   text-align: center;
+  padding: 50px 20px;
 }
 
 .dashboard h1 {
+  font-size: 3rem;
   margin-bottom: 50px;
-  font-size: 45px;
+  font-weight: bold;
 }
 
 .cards {
@@ -19,32 +20,54 @@
 }
 
 .card {
-  width: 300px;
-  background: #03346e;
-  padding: 30px;
+  width: 280px;
+  padding: 30px 20px;
   border-radius: 20px;
-  transition: 0.3s;
-  box-shadow: 0px 0px 15px rgba(0,255,255,0.3);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+  transition: 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.8);
 }
 
 .card h2 {
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
 .card p {
-  margin-bottom: 20px;
+  font-size: 1rem;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .card button {
-  padding: 12px 25px;
+  background: #7fffd4;
+  color: #0d2b6b;
   border: none;
-  border-radius: 25px;
-  background: cyan;
+  padding: 12px 25px;
+  border-radius: 30px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .dashboard h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 90%;
+  }
 }

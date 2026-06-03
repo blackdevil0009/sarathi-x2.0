@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
+import Compiler from "./components/Compiler";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -51,6 +52,7 @@ function App() {
 
         {/* Dashboard Page */}
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/compiler" element={<Compiler />} />
 
       </Routes>
     </BrowserRouter>
