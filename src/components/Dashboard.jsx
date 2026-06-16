@@ -1,41 +1,87 @@
+import { Link } from "react-router-dom";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
-
-function Dashboard() {
-  const navigate = useNavigate();
-
+const Dashboard = () => {
   return (
     <div className="dashboard">
-      <h1>Welcome to Sarthi-X Dashboard</h1>
 
-      <div className="cards">
+      {/* Sidebar */}
+      <div className="sidebar">
+        <h2>Sarathi-X</h2>
 
-        <div className="card">
-          <h2>Quiz Section</h2>
-          <p>Test your knowledge with interactive quizzes.</p>
-          <button>Open Quiz</button>
+        <ul>
+  <li><Link to="/dashboard">🏠 Dashboard</Link></li>
+
+  <li><Link to="/ai">🤖 AI Assistant</Link></li>
+
+  <li><Link to="/compiler">💻 Compiler</Link></li>
+
+  <li><Link to="/quiz">📝 Quiz</Link></li>
+
+  <li>📚 Courses</li>
+  <li>🏆 Leaderboard</li>
+  <li>⚙️ Settings</li>
+</ul>
+      </div>
+
+      {/* Main Content */}
+      <div className="main-content">
+
+        {/* Header */}
+        <div className="header">
+          <input
+            type="text"
+            placeholder="Search..."
+            className="search-bar"
+          />
+
+          <div className="profile">
+            🔔
+            <img
+              src="https://via.placeholder.com/40"
+              alt="profile"
+            />
+          </div>
         </div>
 
-        <div className="card">
-          <h2>Compiler</h2>
-          <p>Write and run code easily.</p>
-          <button onClick={() => navigate("/compiler")}>
-            Open Compiler
-          </button>
+        {/* Welcome Section */}
+        <div className="welcome">
+          <h1>Welcome Back 👋</h1>
+          <p>Continue your learning journey with Sarathi-X</p>
         </div>
 
-        <div className="card">
-          <h2>AI Assistant</h2>
-          <p>Get AI help for learning and coding.</p>
-          <button onClick={() => navigate("/ai")}>
-            Explore AI
-          </button>
+        {/* Stats Cards */}
+        <div className="stats">
+          <div className="card">
+            <h3>Problems Solved</h3>
+            <p>120</p>
+          </div>
+
+          <div className="card">
+            <h3>Quiz Score</h3>
+            <p>85%</p>
+          </div>
+
+          <div className="card">
+            <h3>Streak</h3>
+            <p>15 Days</p>
+          </div>
+
+          <div className="card">
+            <h3>AI Queries</h3>
+            <p>450</p>
+          </div>
         </div>
+
+<div className="graph-card">
+  <h2>Coding Progress</h2>
+
+</div>
 
       </div>
+
     </div>
   );
-}
+};
 
 export default Dashboard;
