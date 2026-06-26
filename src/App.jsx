@@ -8,6 +8,7 @@ import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import Compiler from "./components/Compiler";
 import AIPage from "./pages/AIPage";
+import HowItWork from "./components/HowItWork";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -32,12 +33,15 @@ function App() {
               <section id="about">
                 <About />
               </section>
+              <section id="HowItWork">
+                <HowItWork />
+              </section>
 
               <section id="features">
                 <Features />
               </section>
 
-              
+            
 
               <section id="contact">
                 <Contact />

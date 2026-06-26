@@ -6,7 +6,7 @@ function About() {
       <div className="about-container">
 
         <div className="about-top">
-          <p className="about-tag">WELCOME TO SARTHI-X</p>
+          <p className="about-tag">WELCOME TO SARATHI-X</p>
 
           <h1>
             Learn Smarter <span>With AI</span>
